@@ -1,8 +1,8 @@
 import { Module } from '@nestjs/common';
-import { AuthService } from './auth.service';
-import { UsersModule } from '../users/users.module';
+import { AuthService } from '../services/auth.service';
+import { UsersModule } from './users.module';
 import { PassportModule } from '@nestjs/passport';
-import { LocalStrategy } from './local.strategy';
+import { LocalStrategy } from '../tools/local.strategy';
 
 @Module({
   imports: [UsersModule, PassportModule],
