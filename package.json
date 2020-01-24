@@ -23,13 +23,18 @@
     "@nestjs/common": "^5.4.0",
     "@nestjs/core": "^5.4.0",
     "@nestjs/passport": "^6.1.1",
+    "@nestjs/typeorm": "^6.2.0",
     "class-transformer": "^0.2.3",
     "class-validator": "^0.11.0",
+    "dotenv": "^8.2.0",
+    "mysql": "^2.18.1",
+    "nestjs-redis": "^1.2.5",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
     "reflect-metadata": "^0.1.12",
     "rimraf": "^2.6.2",
     "rxjs": "^6.2.2",
+    "typeorm": "^0.2.22",
     "typescript": "^3.0.1"
   },
   "devDependencies": {
