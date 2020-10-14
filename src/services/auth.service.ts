@@ -7,8 +7,8 @@ export class AuthService {
   constructor(private readonly usersService: UsersService) {}
 
   async validateUser(identifier: string, pass: string): Promise<any> {
-    console.log(2)
     const user = await this.usersService.findOne(identifier);
+    if (!user) { return null }
     const saltedPassword = user.salt.substr(0, 4) + pass + user.salt.substr(4)
     const passwordIsCorrect = md5(saltedPassword) === user.hashedPassword
     console.log(user, saltedPassword, passwordIsCorrect)

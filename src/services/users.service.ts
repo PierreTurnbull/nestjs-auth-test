@@ -5,7 +5,6 @@ import { getRepository } from 'typeorm';
 @Injectable()
 export class UsersService {
   async findOne(identifier: string) {
-    console.log(3)
     const user = await getRepository(UsersEntity)
       .createQueryBuilder('user')
       .select([
